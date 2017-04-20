@@ -3,8 +3,6 @@
  
 запретить ревизии постов
 -->
-
-
 define('WP_POST_REVISIONS', false ); 
 <!--или этот-->
 define('WP_POST_REVISIONS', 0 );
