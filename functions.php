@@ -1,9 +1,10 @@
 remove_action('wp_head', 'wp_generator');
 add_filter( 'show_admin_bar', '__return_false' );
 define('DISALLOW_FILE_EDIT', true); 
-<<<<<<< HEAD
 
-Удаление всех редакций:
+
+<!--Удаление всех редакций:-->
+
 global $wpdb;
 $wpdb->query(
 	"
@@ -13,6 +14,6 @@ $wpdb->query(
 	WHERE a.post_type = 'revision'
 	"
 );
-// как только редакции исчезнут, код нужно удалить
-=======
->>>>>>> origin/wordpress
+
+<!--// как только редакции исчезнут, код нужно удалить-->
+
